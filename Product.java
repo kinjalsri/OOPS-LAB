@@ -1,5 +1,5 @@
 class Product {
-    private static int totalProducts = 0; 
+    static int totalProducts = 0;
     private int productId;
     private String productName;
     private String category;
@@ -54,16 +54,14 @@ class Product {
 
         product1.displayProductInfo();
         System.out.println("Stock Value (10 units): $" + product1.calculateStockValue(10));
-        
 
         product2.displayProductInfo();
         System.out.println("Stock Value (5 units): $" + product2.calculateStockValue(5));
         System.out.println("Stock Value (5 units, 10% discount): $" + product2.calculateStockValue(5, 10));
-   
 
         product3.displayProductInfo();
         System.out.println("Stock Value (3 units): $" + product3.calculateStockValue(3));
         System.out.println("Stock Value (3 units, 5% discount): $" + product3.calculateStockValue(3, 5));
-       
+
     }
 }
